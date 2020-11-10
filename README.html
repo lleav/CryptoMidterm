@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="cryptocurrency-downloader-and-parser">Cryptocurrency Downloader and Parser</h1>
+<h2 id="installation">Installation</h2>
+<p>Install manually</p>
+<ol>
+<li>Download the github repository</li>
+<li>Copy everything in the github repository to a folder.</li>
+<li>This program utilizes urllib.request, pandas, and beautifulsoup4. All can be installed using pip.</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p>Main Programs (Current Data)</p>
+<ol>
+<li>Run <a href="http://CryptoDownloader.py">CryptoDownloader.py</a> using Python</li>
+<li><code>python3 CryptoDownloader.py</code></li>
+<li>Wait for all of the files to finish downloading. (The program is set to run in 15 minute intervals for about 50 hours and can be adjusted by adjusting the time.sleep() and range() functions in the CryptoDownloader program.)</li>
+<li>You will see the following terminal response (downloading 1-5 and downloadingcg 1-5) for each time interval 0 through n.<br>
+<code>0</code><br>
+<code>downloading 1</code><br>
+<code>downloadingcg 1</code><br>
+<code>downloading 2</code><br>
+<code>downloadingcg 2</code><br>
+<code>downloading 3</code><br>
+<code>downloadingcg 3</code><br>
+<code>downloading 4</code><br>
+<code>downloadingcg 4</code><br>
+<code>downloading 5</code><br>
+<code>downloadingcg5</code><br>
+<a href="https://photos.google.com/photo/AF1QipNc0inHmXzoO8bZUZv6yGNzN4Gva3aN_5gPDQJ9">https://photos.google.com/photo/AF1QipNc0inHmXzoO8bZUZv6yGNzN4Gva3aN_5gPDQJ9</a></li>
+<li>After downloading all of the desired data run <a href="http://CoinGeckoParser.py">CoinGeckoParser.py</a> and <a href="http://CoinMarketParser.py">CoinMarketParser.py</a>.<br>
+<code>python3 CoinGeckoParser.py</code><br>
+<code>python3 CoinMarketParser.py</code></li>
+<li>You will see the following terminal response(s) for each html. Where the number after the \ is the scrape time.<br>
+<code>coingecko_htmls\202011092231531.html</code><br>
+<code>coingecko_htmls\202011092232562.html</code><br>
+<code>coingecko_htmls\202011092233583.html</code><br>
+<a href="https://photos.google.com/photo/AF1QipPQH9Uv0xjysYm4rAw3iL049NmFsnQ0OsxkVrHL">https://photos.google.com/photo/AF1QipPQH9Uv0xjysYm4rAw3iL049NmFsnQ0OsxkVrHL</a><br>
+<code>coinmarket_htmls\202011092231531.html</code><br>
+<code>coinmarket_htmls\202011092232552.html</code><br>
+<code>coinmarket_htmls\202011092233583.html</code><br>
+<a href="https://photos.google.com/photo/AF1QipOA4Tm5l-bW_O9abxha53kqbrWBubkFeYZkeHRD">https://photos.google.com/photo/AF1QipOA4Tm5l-bW_O9abxha53kqbrWBubkFeYZkeHRD</a></li>
+<li>Wait until the parsing programs finish running entirely. This is important as the data frame is converted to a .csv file at the very end of the program script.</li>
+<li>When the programs are done you will find your parsed data in two separate .csv file’s consisting of the link, market cap, name, price, symbol, time, and volume. The csv files will be titled coinmarketcap_dataset.csv and coingecko_dataset.csv respectively and will be in separate directories titled parsed_filesCG and parsed_filesCM.</li>
+</ol>
+<p>Secondary Programs (Historical Data)</p>
+<ol>
+<li>There are also two programs included that scrape the htmls containing the historical data for each of the 500 coins.</li>
+<li>Download cloudscraper using pip.</li>
+<li>To scrape the htmls create a directory named coinname and inside create a .csv titled links containing the data in the link column (located in coingecko_dataset.csv and coinmarketcap_dataset.csv) for the coins you are interested in.</li>
+<li>Now run <a href="http://HistDownloaderCG.py">HistDownloaderCG.py</a> and <a href="http://HistDownloaderCM.py">HistDownloaderCM.py</a>.<br>
+<code>python3 HistDownloaderCG.py</code><br>
+<code>python3 HistDownloaderCM.py</code></li>
+<li>The resulting html files will be located in folders titled CMHIST_html and CGHIST_html.</li>
+</ol>
+<h2 id="limitations">Limitations</h2>
+<p>The program <a href="http://CryptoDownloader.py">CryptoDownloader.py</a> is susceptible to timeout errors and internet connection errors. I have used an If “error__” continue statement to prevent a particular error, feel free to repeat this structure for other errors of concern.</p>
+<h2 id="license">License</h2>
+<p>Copyright © 2012 Lee Leavitt. MIT License.</p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>
