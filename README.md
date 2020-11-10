@@ -42,7 +42,7 @@ https://photos.google.com/photo/AF1QipOA4Tm5l-bW_O9abxha53kqbrWBubkFeYZkeHRD
 8. When the programs are done you will find your parsed data in two separate .csv file's consisting of the link, market cap, name, price, symbol, time, and volume. The csv files will be titled coinmarketcap_dataset.csv and coingecko_dataset.csv respectively and will be in separate directories titled parsed_filesCG and parsed_filesCM.
 9. Secondary analysis was done using excel.
 
-Secondary Programs (Historical Data)
+Secondary Programs (Historical Data and Logo)
 
  1. There are also two programs included that scrape the htmls containing the historical data for each of the 500 coins.
  2. Download cloudscraper using pip.
@@ -51,6 +51,9 @@ Secondary Programs (Historical Data)
 `python3 HistDownloaderCG.py`
 `python3 HistDownloaderCM.py`
 5. The resulting html files will be located in folders titled CMHIST_html and CGHIST_html.
+6. To download the Logos run the program Logo.py
+`python3 Logo.py`
+7. You will find the logos in a .csv named "logo.csv" in a directory named "logo".
 
 ## Limitations
 The program CryptoDownloader.py is susceptible to timeout errors and internet connection errors. I have used an If "error__" continue statement to prevent a particular error, feel free to repeat this structure for other errors of concern.
