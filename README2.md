@@ -40,7 +40,6 @@ https://photos.google.com/photo/AF1QipPQH9Uv0xjysYm4rAw3iL049NmFsnQ0OsxkVrHL
 https://photos.google.com/photo/AF1QipOA4Tm5l-bW_O9abxha53kqbrWBubkFeYZkeHRD
 7. Wait until the parsing programs finish running entirely. This is important as the data frame is converted to a .csv file at the very end of the program script. 
 8. When the programs are done you will find your parsed data in two separate .csv file's consisting of the link, market cap, name, price, symbol, time, and volume. The csv files will be titled coinmarketcap_dataset.csv and coingecko_dataset.csv respectively and will be in separate directories titled parsed_filesCG and parsed_filesCM.
-9. Secondary analysis was done using excel.
 
 Secondary Programs (Historical Data)
 
@@ -55,13 +54,8 @@ Secondary Programs (Historical Data)
 ## Limitations
 The program CryptoDownloader.py is susceptible to timeout errors and internet connection errors. I have used an If "error__" continue statement to prevent a particular error, feel free to repeat this structure for other errors of concern.
  ## License
-Copyright 2020 Lee Leavitt
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ Copyright (C) 2012 Lee Leavitt. MIT License.
 
 
 > Written with [StackEdit](https://stackedit.io/).
+"# CryptoMidterm" 
